@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Enciclopédia Harry Potter</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <aside class="sidebar">
+        <div class="sidebar-title">
+            <img src="./img/image.png" alt="Logo Harry Potter" class="sidebar-logo">
+            <p>Enciclopédia de Hogwarts</p>
+        </div>
+
+        <nav class="menu-lista">
+
+            <a data-casa="Gryffindor">
+                <img src="./img/grifi.png" class="casa-icone"> Grifinória
+            </a>
+
+            <a data-casa="Slytherin">
+                <img src="./img/rina.png" class="casa-icone"> Sonserina
+            </a>
+
+            <a data-casa="Ravenclaw">
+                <img src="./img/corvi.png" class="casa-icone"> Corvinal
+            </a>
+
+            <a data-casa="Hufflepuff">
+                <img src="./img/lufa.png" class="casa-icone"> Lufa Lufa
+            </a>
+
+        </nav>
+    </aside>
+
+
+    <main class="conteudo">
+
+
+        <header class="topo">
+            <input id="campoBusca" class="input is-rounded campo-busca" type="text" placeholder="Digite seu personagem...">
+        </header>
+
+
+        <section class="area-resultados">
+            <p class="has-text-white">Total de itens encontrados:
+                <strong id="total-itens">0</strong>
+            </p>
+
+            <div id="lista-personagens" class="lista-personagens"></div>
+
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

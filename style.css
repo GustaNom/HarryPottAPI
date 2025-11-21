@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+.sidebar-logo {
+    width: 140px;
+    filter: drop-shadow(0 0 4px #0f0);
+    margin-bottom: 10px;
+    opacity: 0.95;
+}
+
+.casa-icone {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    vertical-align: middle;
+    filter: drop-shadow(0 0 2px #000);
+    opacity: 0.9;
+}
+
+.menu-lista a {
+    color: #e6e6e6;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    padding: 5px 0;
+}
+
+.menu-lista a:hover {
+    color: #9affd1;
+    transform: translateX(6px);
+}
+
+body {
+    background-color: #0d0f13;
+    font-family: "Cinzel", serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.hp-card {
+    background-color: #15171d;
+    border: 1px solid #243328;
+    border-radius: 10px;
+    color: #eaeaea;
+    transition: 0.3s;
+}
+
+.hp-card img {
+    padding: 30px;
+}
+
+
+.hp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 12px #1b3c2b;
+}
+
+.hp-card .card-header {
+    background-color: #112017;
+    border-bottom: 1px solid #243328;
+}
+
+.hp-card .card-header-title {
+    color: #d5ffd8;
+    font-family: "Cinzel", serif;
+}
+
+.hp-card .content p {
+    margin-bottom: 6px;
+}
+
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #12231a;
+    border-right: 1px solid #1f3a2c;
+    padding: 20px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-title h1 {
+    font-size: 20px;
+    color: #ddd;
+    margin: 0;
+}
+
+.sidebar-title p {
+    font-size: 10px;
+    color: #aaa;
+    margin-top: 2px;
+}
+
+.menu-lista {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.menu-lista a {
+    color: #e6e6e6;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.menu-lista a:hover {
+    color: #9affd1;
+    transform: translateX(4px);
+}
+
+
+.conteudo {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    padding: 0;
+}
+
+
+.topo {
+    background-color: #112017;
+    padding: 15px 25px;
+    border-bottom: 1px solid #1f3a2c;
+    display: flex;
+    align-items: center;
+}
+
+.campo-busca {
+    width: 400px;
+    background-color: #1f2229 !important;
+    border: 1px solid #323640 !important;
+    color: #ddd !important;
+}
+
+.campo-busca::placeholder {
+    color: #777;
+}
+
+
+.area-resultados {
+    padding: 25px;
+}
+
+.lista-personagens {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+
